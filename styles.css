@@ -1,0 +1,165 @@
+/* Configuration de base */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* En-tête */
+.header {
+    background-color: #FFA500; /* Orange de Goku */
+    color: #FFFFFF;
+    padding: 20px 10px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-menu li {
+    margin: 0 15px;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+/* Page d'accueil */
+.home {
+    text-align: center;
+    padding: 50px 20px;
+    background: linear-gradient(to bottom, #FFA500, #FFDD00); /* Dégradé orange à jaune */
+    color: #FFFFFF;
+}
+
+.home h2 {
+    font-size: 2.5em;
+}
+
+/* Section Actualités */
+.news {
+    padding: 20px;
+    background-color: #FFDD00; /* Jaune Dragon Ball */
+}
+
+.news h2, .news-item h3 {
+    color: #FFA500; /* Orange vif */
+}
+
+/* Section Tests */
+.tests {
+    padding: 20px;
+    background-color: #1E90FF; /* Bleu comme Vegeta */
+    color: #FFFFFF;
+}
+
+/* Footer */
+.footer {
+    background-color: #333;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 10px;
+    font-size: 0.9em;
+}
+/* Animation de l'accueil */
+.home h2 {
+    animation: glow 2s infinite alternate;
+}
+
+@keyframes glow {
+    from {
+        text-shadow: 0 0 10px #FFFFFF, 0 0 20px #FFDD00, 0 0 30px #FFA500;
+    }
+    to {
+        text-shadow: 0 0 20px #FFFFFF, 0 0 30px #FFDD00, 0 0 40px #FFA500;
+    }
+}
+
+/* Transition des liens */
+.nav-menu a:hover {
+    color: #FFDD00;
+    transition: color 0.3s ease-in-out;
+}
+.contact form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #FFF;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.contact label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+.contact input, .contact textarea, .contact button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #CCC;
+    border-radius: 4px;
+}
+.contact button {
+    background-color: #FFA500;
+    color: #FFF;
+    border: none;
+    cursor: pointer;
+}
+.contact button:hover {
+    background-color: #FF8C00;
+}
+.header h1 {
+    animation: aura 3s infinite alternate;
+    color: #FFFFFF;
+    text-shadow: 0 0 10px #FFA500, 0 0 20px #FFDD00, 0 0 30px #FFA500, 0 0 40px #FF4500;
+}
+
+@keyframes aura {
+    0% {
+        text-shadow: 0 0 10px #FFDD00, 0 0 20px #FFA500, 0 0 30px #FF4500;
+    }
+    100% {
+        text-shadow: 0 0 20px #FFFFFF, 0 0 30px #FFDD00, 0 0 40px #FFA500, 0 0 50px #FF4500;
+}
+}
+button {
+    background-color: #FFA500;
+    color: #FFFFFF;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+button:hover {
+    background-color: #FF4500;
+    transform: scale(1.1);
+    animation: explode 0.5s ease-in-out;
+}
+
+@keyframes explode {
+    0% {
+        box-shadow: 0 0 10px #FF4500, 0 0 20px #FFDD00;
+    }
+    100% {
+        box-shadow: 0 0 30px #FF4500, 0 0 50px #FFDD00;
+}
+}
